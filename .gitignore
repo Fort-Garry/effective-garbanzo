@@ -459,6 +459,8 @@ gradle-app.setting
 bin/
 gen/
 
+!web/bin/
+
 # Gradle files
 
 # Signing files
