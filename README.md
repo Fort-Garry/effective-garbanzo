@@ -2,6 +2,8 @@
 
 A cross-platform application suite consisting of a web application and mobile apps for iOS and Android.
 
+[![CLA assistant](https://cla-assistant.io/readme/badge/Fort-Garry/effective-garbanzo)](https://cla-assistant.io/Fort-Garry/effective-garbanzo)
+
 ## Project Structure
 
 This repository is organized as a monorepo containing three main projects:
