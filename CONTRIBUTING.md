@@ -71,7 +71,6 @@ CLA Assistant URL: <https://cla-assistant.io/Fort-Garry/effective-garbanzo>
 
 ### General Guidelines
 
-- **Users are soft deleted** using the discard gem - never hard delete users unless legally required
 - Write clear, descriptive commit messages
 - Keep pull requests focused on a single feature or fix
 - Add comments for complex logic
