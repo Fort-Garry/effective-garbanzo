@@ -198,16 +198,21 @@ See the `web/` directory for deployment configuration.
 
 ## Contributing
 
+Before submitting a PR, you must sign the Contributor License Agreement (CLA) via CLA Assistant:
+<https://cla-assistant.io/Fort-Garry/effective-garbanzo>
+
 1. Create a feature branch from `main`
 2. Make your changes following the guidelines in `AGENTS.md`
 3. Write/update tests as needed
 4. Ensure all tests pass
 5. Run linters and security checks
 6. Submit a pull request with a clear description
+7. Ensure the CLA check passes on your PR
 
 ## License
 
-Private
+GNU Affero General Public License v3.0-only (AGPL-3.0-only). See `LICENSE` and `NOTICE`.
+Contributions require a signed Contributor License Agreement (see `CONTRIBUTING.md`).
 
 ## Contact
 

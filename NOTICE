@@ -1,0 +1,40 @@
+Famli
+Copyright (C) 2025 Dieter Lunn <dieter@dieterlunn.ca>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, version 3 of the License only.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+-------------------------------------------------------------------------------
+
+NETWORK USE NOTICE
+
+This software is designed to interact with users remotely through a computer
+network. In accordance with Section 13 of the GNU Affero General Public License,
+users interacting with this software over a network must be provided access to
+the Corresponding Source code.
+
+The source code for this application is available at:
+<https://github.com/Fort-Garry/effective-garbanzo>
+
+-------------------------------------------------------------------------------
+
+CONTRIBUTOR NOTICE
+
+All contributions to this project require a signed Contributor License Agreement
+(CLA). By signing the CLA, you grant the copyright holder a perpetual license to
+use, modify, and distribute your contributions under terms that allow commercial
+use of this software.
+
+Contributors will not receive compensation for their contributions unless
+explicitly agreed upon in a separate written agreement.
+
+See CONTRIBUTING.md for more details.
