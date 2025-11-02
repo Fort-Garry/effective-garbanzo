@@ -1,0 +1,9 @@
+<span
+  class="<%= wrapper_classes %>"
+  data-controller="word-rotate"
+  data-word-rotate-words-value="<%= words_json %>"
+  data-word-rotate-interval-value="<%= interval %>"
+  <%= @html_options.except(:class).map { |k, v| "#{k}=\"#{v}\"" }.join(' ').html_safe %>
+>
+  <span data-word-rotate-target="word" class="transition-all duration-300"></span>
+</span>

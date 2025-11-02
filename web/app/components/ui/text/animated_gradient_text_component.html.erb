@@ -1,0 +1,18 @@
+<span class="<%= text_classes %>" <%= @html_options.except(:class).map { |k, v| "#{k}=\"#{v}\"" }.join(' ').html_safe %>>
+  <%= content %>
+</span>
+
+<style>
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
+  }
+
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+</style>

@@ -1,0 +1,33 @@
+/**
+ * Custom animations for Famli Design System
+ * Extends Tailwind with component-specific animations
+ */
+
+@layer utilities {
+  /* Blur Fade Animation */
+  @keyframes blur-fade-in {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+
+  .animate-blur-fade {
+    animation: blur-fade-in 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Pulse effect for badges */
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Gradient animation (defined in animated_gradient_text_component.html.erb) */
+  /* Retro grid animation (defined in retro_grid_component.html.erb) */
+}

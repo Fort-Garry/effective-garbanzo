@@ -1,0 +1,13 @@
+<span
+  class="<%= wrapper_classes %>"
+  data-controller="typing-animation"
+  data-typing-animation-text-value="<%= text %>"
+  data-typing-animation-speed-value="<%= speed %>"
+  data-typing-animation-cursor-value="<%= cursor? %>"
+  <%= @html_options.except(:class).map { |k, v| "#{k}=\"#{v}\"" }.join(' ').html_safe %>
+>
+  <span data-typing-animation-target="text"></span>
+  <% if cursor? %>
+    <span class="animate-pulse" data-typing-animation-target="cursor">|</span>
+  <% end %>
+</span>

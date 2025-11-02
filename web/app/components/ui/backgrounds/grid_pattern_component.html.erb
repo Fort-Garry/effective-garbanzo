@@ -1,0 +1,10 @@
+<div class="<%= wrapper_classes %>" <%= @html_options.except(:class).map { |k, v| "#{k}=\"#{v}\"" }.join(' ').html_safe %>>
+  <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="grid-pattern" x="0" y="0" width="<%= cell_size %>" height="<%= cell_size %>" patternUnits="userSpaceOnUse">
+        <path d="M 0 0 L <%= cell_size %> 0 M 0 0 L 0 <%= cell_size %>" fill="none" stroke="<%= color %>" stroke-width="<%= stroke_width %>" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+  </svg>
+</div>

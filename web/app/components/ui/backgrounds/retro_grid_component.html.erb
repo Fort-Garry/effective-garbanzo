@@ -1,0 +1,27 @@
+<div class="<%= wrapper_classes %>" <%= @html_options.except(:class).map { |k, v| "#{k}=\"#{v}\"" }.join(' ').html_safe %>>
+  <div class="retro-grid w-full h-full">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/20"></div>
+  </div>
+</div>
+
+<style>
+  .retro-grid {
+    background-image:
+      linear-gradient(to right, var(--color-primary) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-primary) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: perspective(500px) rotateX(60deg);
+    transform-origin: center bottom;
+    animation: retro-grid-scroll 20s linear infinite;
+    opacity: 0.15;
+  }
+
+  @keyframes retro-grid-scroll {
+    0% {
+      transform: perspective(500px) rotateX(60deg) translateY(0);
+    }
+    100% {
+      transform: perspective(500px) rotateX(60deg) translateY(50px);
+    }
+  }
+</style>
