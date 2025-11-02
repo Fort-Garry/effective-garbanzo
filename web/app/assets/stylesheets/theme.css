@@ -1,0 +1,104 @@
+/**
+ * Famli Brand Theme Colors (OKLCH)
+ * 
+ * Based on Famli Brand Guidelines with colors converted to OKLCH color space
+ * for better perceptual uniformity and easier manipulation.
+ * 
+ * Light mode: Default theme
+ * Dark mode: Applied via .dark class or @media (prefers-color-scheme: dark)
+ */
+
+@layer theme {
+  :root {
+    /* Primary - Joyful rose for CTAs, headers */
+    --color-primary: oklch(72.6% 0.150 13.8);
+    
+    /* Secondary - Sunlight warmth for highlights */
+    --color-secondary: oklch(86.2% 0.150 84.8);
+    
+    /* Accent - Balancing mint for trust and freshness */
+    --color-accent: oklch(81.4% 0.104 167.1);
+    
+    /* Background - Neutral base, cozy interface */
+    --color-background: oklch(98.6% 0.007 28.2);
+    
+    /* Surface - Panels and cards */
+    --color-surface: oklch(97.0% 0.015 7.2);
+    
+    /* Text - Readable, soft contrast */
+    --color-text: oklch(24.8% 0.022 23.4);
+    --color-text-muted: oklch(55% 0.015 23.4);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Primary - Joyful rose (dark mode) */
+      --color-primary: oklch(78.0% 0.132 11.2);
+      
+      /* Secondary - Sunlight warmth (dark mode) */
+      --color-secondary: oklch(78.9% 0.139 87.4);
+      
+      /* Accent - Balancing mint (dark mode) */
+      --color-accent: oklch(72.3% 0.096 167.2);
+      
+      /* Background - Dark base */
+      --color-background: oklch(21.8% 0.000 263.3);
+      
+      /* Surface - Dark panels and cards */
+      --color-surface: oklch(26.4% 0.011 8.0);
+      
+      /* Text - Light readable text */
+      --color-text: oklch(97.6% 0.009 16.8);
+      --color-text-muted: oklch(70% 0.009 16.8);
+    }
+  }
+
+  .dark {
+    /* Primary - Joyful rose (dark mode) */
+    --color-primary: oklch(78.0% 0.132 11.2);
+    
+    /* Secondary - Sunlight warmth (dark mode) */
+    --color-secondary: oklch(78.9% 0.139 87.4);
+    
+    /* Accent - Balancing mint (dark mode) */
+    --color-accent: oklch(72.3% 0.096 167.2);
+    
+    /* Background - Dark base */
+    --color-background: oklch(21.8% 0.000 263.3);
+    
+    /* Surface - Dark panels and cards */
+    --color-surface: oklch(26.4% 0.011 8.0);
+    
+    /* Text - Light readable text */
+    --color-text: oklch(97.6% 0.009 16.8);
+    --color-text-muted: oklch(70% 0.009 16.8);
+  }
+}
+
+/**
+ * Utility classes using theme colors
+ * These will be available as text-primary, bg-primary, border-primary, etc.
+ */
+@layer utilities {
+  .text-primary { color: var(--color-primary); }
+  .text-secondary { color: var(--color-secondary); }
+  .text-accent { color: var(--color-accent); }
+  .text-muted { color: var(--color-text-muted); }
+  
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .bg-accent { background-color: var(--color-accent); }
+  .bg-surface { background-color: var(--color-surface); }
+  
+  .border-primary { border-color: var(--color-primary); }
+  .border-secondary { border-color: var(--color-secondary); }
+  .border-accent { border-color: var(--color-accent); }
+  
+  .fill-primary { fill: var(--color-primary); }
+  .fill-secondary { fill: var(--color-secondary); }
+  .fill-accent { fill: var(--color-accent); }
+  
+  .stroke-primary { stroke: var(--color-primary); }
+  .stroke-secondary { stroke: var(--color-secondary); }
+  .stroke-accent { stroke: var(--color-accent); }
+}
