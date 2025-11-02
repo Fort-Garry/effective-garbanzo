@@ -151,6 +151,19 @@ cd android
 - Ensure all tests pass before committing
 - Use meaningful commit messages
 
+### Color Scheme
+
+| Role | Light Mode | Dark Mode | Description |
+| --- | --- | --- | --- |
+| **Primary** | ![](https://placehold.co/10x10/F57B8A/F57B8A.png) `#F57B8A` (oklch 0.72 0.17 25) | ![](https://placehold.co/10x10/FF92A2/FF92A2.png) `#FF92A2` | Joyful rose pink — main brand color for buttons, headers |
+| **Secondary** | ![](https://placehold.co/10x10/FFC94C/FFC94C.png) `#FFC94C` (oklch 0.84 0.14 90) | ![](https://placehold.co/10x10/E0B440/E0B440.png) `#E0B440` | Warm sunlight yellow for highlights, icons, and cheerful accents |
+| **Accent** | ![](https://placehold.co/10x10/7AD8B4/7AD8B4.png) `#7AD8B4` (oklch 0.8 0.13 160) | ![](https://placehold.co/10x10/64B999/64B999.png) `#64B999` | Soothing mint to balance the energy of pink and yellow |
+| **Background** | ![](https://placehold.co/10x10/FFF9F8/FFF9F8.png) `#FFF9F8` | ![](https://placehold.co/10x10/1A1A1A/1A1A1A.png) `#1A1A1A` | Neutral base, warm tint for a cozy interface |
+| **Surface** | ![](https://placehold.co/10x10/FFF1F3/FFF1F3.png) `#FFF1F3` | ![](https://placehold.co/10x10/2A2324/2A2324.png) `#2A2324` | Slightly tinted panels and cards for visual depth |
+| **Text / On-Surface** | ![](https://placehold.co/10x10/2B1D1C/2B1D1C.png) `#2B1D1C` | ![](https://placehold.co/10x10/FDF5F5/FDF5F5.png) `#FDF5F5` | Friendly contrast, easy on the eyes |
+| **Info / Trust Blue** | ![](https://placehold.co/10x10/7DBCF5/7DBCF5.png) `#7DBCF5` | ![](https://placehold.co/10x10/5A9DE6/5A9DE6.png) `#5A9DE6` | For notifications or trust-related elements |
+| **Success / Green** | ![](https://placehold.co/10x10/9CD68E/9CD68E.png) `#9CD68E` | ![](https://placehold.co/10x10/7EB972/7EB972.png) `#7EB972` | For positive actions (upload complete, message sent) |
+
 ### Security & Privacy
 
 - **Users are soft deleted** using the discard gem (Rails) - never hard delete users unless legally required
