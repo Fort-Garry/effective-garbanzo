@@ -26,6 +26,9 @@ class ApplicationController
     include ::Importmap::ImportmapTagsHelper
     include ::ActionController::Base::HelperMethods
     include ::ApplicationHelper
+
+    sig { returns(T.untyped) }
+    def authenticated?; end
   end
 
   class HelperProxy < ::ActionView::Base

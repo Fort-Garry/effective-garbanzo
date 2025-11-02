@@ -10,10 +10,28 @@ module GeneratedPathHelpersModule
   include ::ActionDispatch::Routing::PolymorphicRoutes
 
   sig { params(args: T.untyped).returns(String) }
+  def edit_password_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def edit_session_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def new_password_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_source_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def new_session_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def password_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def passwords_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def rails_blob_path(*args); end
@@ -95,6 +113,9 @@ module GeneratedPathHelpersModule
 
   sig { params(args: T.untyped).returns(String) }
   def rails_storage_redirect_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def session_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def turbo_recede_historical_location_path(*args); end
